@@ -1,0 +1,29 @@
+form{
+    display: grid; 
+    width: 100%; 
+    height: 100vh;
+    font-size: 1.3em;
+    grid-template-areas: 
+    'f1 results'
+    'f2 results'
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    grid-gap: 10px;
+    #f1{grid-area: f1; background-color: lightblue;}
+    #f2{grid-area: f2; background-color: lightcoral;}
+    #results{
+        grid-area:results; 
+        background-color: lightgray;
+        padding:5%;
+        .newDiv{
+            background-color: grey;
+            p{
+
+            }
+        }
+    }
+    #radiobuttons1,#radiobuttons2,#radiobuttons3{margin-bottom: 10px;}
+    #knapp{background-color: lightskyblue; height: 50px;}
+}
+

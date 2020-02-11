@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulär</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset id="f1">
+            <legend>
+                Vad tycker du om spelet?
+            </legend>
+            <div id="radiobuttons1">
+                <label>Hade du roligt? </label><br>
+                <label for="R1">Mycket roligt</label><input type="radio" name="rolig" id="R1" value="Mycket roligt">
+                <label for="R2">Roligt</label><input type="radio" name="rolig" id="R2" value="Roligt">
+                <label for="R3">Tråkigt</label><input type="radio" name="rolig" id="R3" value="Tråkigt">
+            </div>
+            <div id="textruta">
+                <label for="textarea">Lämna en motivering(minst 10 tecken)</label><br>
+                <textarea name="motivering" id="textarea" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset id="f2">
+            <legend>
+                Vad tycker du om övriga sidan?
+            </legend>
+            <div id="radiobuttons2">
+                <label>Var det lätt att hitta på sidan? </label><br>
+                <label for="G1">Ja</label><input type="radio" name="hitta" id="G1" value="Lätt att hitta">
+                <label for="G2">Ganska lätt</label><input type="radio" name="hitta" id="G2" value="Ganska lätt att hitta">
+                <label for="G3">Nej</label><input type="radio" name="hitta" id="G3" value="Svårt att hitta">
+            </div>
+            <div id="radiobuttons3">
+                <label>Hur tycker du designen är? </label><br>
+                <label for="D1">Snygg</label><input type="radio" name="design" id="D1" value="Snygg">
+                <label for="D2">Helt okej</label><input type="radio" name="design" id="D2" value="Helt okej">
+                <label for="D3">Dålig</label><input type="radio" name="design" id="D3" value="Dålig">
+            </div>
+            <div id="textruta2">
+                <label for="textarea2">Lämna en motivering(minst 10 tecken)</label><br>
+                <textarea name="motivering" id="textarea2" cols="30" rows="5"></textarea>
+            </div>
+            <input type="button" value="Lämna in svar" id="knapp" onclick="svar()">
+        </fieldset>
+        <div id="results"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
