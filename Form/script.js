@@ -36,6 +36,7 @@ function svar(){
     
 
     const res_container = document.getElementById("results");
+    res_container.style.display = "block";
     const div = document.createElement("div");
     div.className = "newDiv";
 
@@ -43,16 +44,15 @@ function svar(){
     h1.textContent = "Dina svar";
 
     const p1 = document.createElement("p");
-    p1.textContent = "Spelet var: " + rolig_svar + " med motiveringen: " + rolig_mot;
+    p1.textContent = "Spelet var: " + rolig_svar + ", med motiveringen: " + rolig_mot;
 
     const p2 = document.createElement("p");
     p2.textContent = "Det var: " + hitta_svar;
 
     const p3 = document.createElement("p");
-    p3.textContent = "Sidan var: " + design_svar + " med motiveringen: " + design_mot;
+    p3.textContent = "Sidan var: " + design_svar + ", med motiveringen: " + design_mot;
     div.appendChild(p1);
     
-    //div.textContent = "Spelet var: " + rolig_svar + "\n" + "Det var: " + hitta_svar + "\n" + "Sidan var: " + design_svar;
     
     div.appendChild(h1);
     div.appendChild(p1);

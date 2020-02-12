@@ -1,4 +1,6 @@
+body{background-color: rgb(0, 0, 46); box-sizing: border-box;}
 form{
+    background-color: rgb(0, 0, 46);
     display: grid; 
     width: 100%; 
     height: 100vh;
@@ -7,23 +9,26 @@ form{
     'f1 results'
     'f2 results'
     ;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 60%;
-    grid-gap: 10px;
-    #f1{grid-area: f1; background-color: lightblue;}
-    #f2{grid-area: f2; background-color: lightcoral;}
+    grid-template-columns: 50% auto;
+    grid-template-rows: 40% auto;
+    grid-gap: 1%;
+    #f1{grid-area: f1; background-color: rgb(255, 255, 255); border-radius: 10px;}
+    #f2{grid-area: f2; background-color: rgb(255, 255, 255); border-radius: 10px;}
+    legend{background-color: white; font-size: 1.4em;}
     #results{
         grid-area:results; 
-        background-color: lightgray;
+        display: none;
+        background-color: rgb(255, 255, 255);
         padding:5%;
+        border-radius: 10px;
         .newDiv{
-            background-color: grey;
+            background-color: rgb(255, 255, 255);
             p{
 
             }
         }
     }
     #radiobuttons1,#radiobuttons2,#radiobuttons3{margin-bottom: 10px;}
-    #knapp{background-color: lightskyblue; height: 50px;}
+    #knapp{background-color: rgb(255, 255, 255); height: 50px;border-radius: 10px;}
 }
 
